@@ -1,11 +1,8 @@
 h1 {
     
 }
-#bloc1{
-    width: 45%;
-    height: 135%;
-    background-color: aqua;
-    box-shadow: 1% 1% #888888;
+#bloc1 {
+    @include bloc;
 }
 #bloc2{
     width: 25%;
@@ -21,4 +18,10 @@ h1 {
     background-color: blue;
     text-align: center;
 
+}
+
+@mixin bloc { 
+    width: 45%;
+    height: 135%;
+    box-shadow: 1% 1% #888888;
 }
