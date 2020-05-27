@@ -1,0 +1,76 @@
+html {
+    
+}
+body { 
+    display: flex;
+    flex-direction: column;
+    
+}
+@mixin bloc {
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex; 
+    width: 35vw;
+    height: 55vh;
+    justify-content: center;
+    box-shadow:10px 10px darkgrey;
+}
+
+#haut{margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#bas{ margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#bloc1 {
+    background-color: violet;
+    @include bloc;
+    border-right: 90px;
+}
+
+#bloc2{
+    background-color: wheat;
+    @include bloc;
+
+}
+
+#bloc3{ 
+    background-color: plum;
+    @include bloc;
+}
+
+#bloc4{
+    background-color: palegoldenrod;
+    @include bloc;
+}
+
+#titre {
+    color: yellow;
+    width: 100vw;
+    height: 10vh;
+    background-color: blue;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: darkgreen;
+    width: 100vw;
+}
+#prochainement{
+    
+    background-color: darkolivegreen;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
