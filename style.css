@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-body { 
-    
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,6 @@ body {
 }
 
 #bas {
-
   margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,8 +42,10 @@ body {
           justify-content: space-evenly;
 }
 
-#bloc1 {font-family: 'Bebas Neue', cursive;
+#bloc1 {
+  background: #FCDFDB;
   background-color: violet;
+  font-size: 2em;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -62,13 +63,16 @@ body {
           justify-content: center;
   -webkit-box-shadow: 0px 0px 10px -3px black;
           box-shadow: 0px 0px 10px -3px black;
-  border-right: 90px;
-  background: #FCDFDB;
-  
+  font-family: "satisfy";
+}
+
+#bloc1 h3 {
+  color: #3d1319;
+  font-size: 2em;
 }
 
 #bloc2 {
-  background-color: wheat;
+  font-size: 2em;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -86,11 +90,35 @@ body {
           justify-content: center;
   -webkit-box-shadow: 0px 0px 10px -3px black;
           box-shadow: 0px 0px 10px -3px black;
-  background: #fff5fe;
+  background-color: #FFF5FE;
+  font-family: "DM Serif Display", serif;
+}
+
+#bloc2 h3 {
+  color: #c77412;
+  font-size: 2em;
+}
+
+.bloc2text {
+  background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bloc3text {
+  background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bloc4text {
+  background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #bloc3 {
-  background-color: plum;
+  font-size: 2em;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -109,10 +137,15 @@ body {
   -webkit-box-shadow: 0px 0px 10px -3px black;
           box-shadow: 0px 0px 10px -3px black;
   background: #ebebeb;
+  font-family: "Bad Script", cursive;
+}
+
+#bloc3 h3 {
+  font-size: 2em;
 }
 
 #bloc4 {
-  background-color: palegoldenrod;
+  font-size: 2em;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -131,12 +164,19 @@ body {
   -webkit-box-shadow: 0px 0px 10px -3px black;
           box-shadow: 0px 0px 10px -3px black;
   background: white;
+  font-family: "Kaushan Script", cursive;
+}
+
+#bloc4 h3 {
+  font-size: 2em;
+  color: #3e923a;
 }
 
 #titre {
+  font-size: 2em;
   color: orange;
   width: 100vw;
-  height: 10vh;
+  height: 80px;
   background-color: #579C87;
   text-align: center;
 }

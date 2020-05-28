@@ -1,30 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 $colorbloc1: #FCDFDB;
-$colorbloc2: #fff5fe;
+$colorbloc2:#FFF5FE;
 $colorbloc3: #ebebeb;;
 $colorbloc4: white;
 $colorheadfoot: #579C87;
 $colortext:orange;
-$stylebloc1:font-family: "Satisfy", cursive;
-$stylebloc2:
-$stylebloc3:
-$stylebloc4:
+
+
 html { 
     
-    
 }
+
 *{
     margin: 0;
     padding: 0;
-
 }
+
 body {
     display: flex;
     flex-direction: column;
-    
 }
+
 @mixin bloc {
+    font-size: 2em;
     text-align: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -33,7 +31,12 @@ body {
     height: 55vh;
     justify-content: center;
     box-shadow:0px 0px 10px -3px black;
+    
+    :hover{
+        
+    }
 }
+
 
 #haut{margin-top: 3%;
     display: flex;
@@ -49,11 +52,14 @@ body {
 
 #bloc1 {
     background: $colorbloc1;
-    
     background-color: violet;
     @include bloc;
-    border-right: 90px;
-   
+  
+    font-family: "satisfy";
+    h3{
+        color:#3d1319;
+        font-size: 2em ;
+    }
     
 }
 
@@ -61,36 +67,73 @@ body {
      
 }
 
-#bloc2{
-    background-color: wheat;
+#bloc2 {
     @include bloc;
-    background: $colorbloc2;
-    font-family: $stylebloc2;
-    font-family: fantasy;
+    background-color: $colorbloc2;
+    font-family: "DM Serif Display", serif;
+    
+    h3 {
+        color:#c77412;
+        font-size: 2em ;
+    
+    }
 
+   
 }
 
+.bloc2text {    
+    background-image: linear-gradient(160deg, #e0881d 5%, #8f5aff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bloc1text {
+    
+}
+.bloc3text { 
+    background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bloc4text {
+    background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
 #bloc3{ 
-    background-color: plum;
     @include bloc;
     background: $colorbloc3;
-    font-family: $stylebloc3;
+    font-family: "Bad Script", cursive;
+    
+  h3 {
+      font-size: 2em ;
+  }
+    
 }
 
 #bloc4{
-    background-color: palegoldenrod;
+
     @include bloc;
-    background: $colorbloc4;
-    font-family: $stylebloc4;
+    background:$colorbloc4;
+    font-family: "Kaushan Script", cursive;
+    h3 {
+        font-size: 2em;
+        color:#3e923a;
+    }
+   
+  
+    
 }
 
 #titre {
+    font-size: 2em;
     color: $colortext;
     width: 100vw;
-    height: 10vh;
+    height: 80px;
     background-color:$colorheadfoot;
     text-align: center;
-    
 }
 
 footer {
@@ -104,8 +147,8 @@ footer {
     height: 10%;
     align-items: center;
 }
+
 #prochainement{
-    
     background-color:$colorheadfoot;
     height: 15vh;
     width: 100vw;
@@ -113,5 +156,4 @@ footer {
     justify-content: center;
     text-align: center;
     color: $colortext;
-
 }
