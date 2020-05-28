@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,9 +58,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 10px 10px darkgrey;
-          box-shadow: 10px 10px darkgrey;
+  -webkit-box-shadow: 0px 0px 10px -3px black;
+          box-shadow: 0px 0px 10px -3px black;
   border-right: 90px;
+  background: #FCDFDB;
 }
 
 #bloc2 {
@@ -75,8 +81,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 10px 10px darkgrey;
-          box-shadow: 10px 10px darkgrey;
+  -webkit-box-shadow: 0px 0px 10px -3px black;
+          box-shadow: 0px 0px 10px -3px black;
+  background: #fff5fe;
 }
 
 #bloc3 {
@@ -96,8 +103,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 10px 10px darkgrey;
-          box-shadow: 10px 10px darkgrey;
+  -webkit-box-shadow: 0px 0px 10px -3px black;
+          box-shadow: 0px 0px 10px -3px black;
+  background: #ebebeb;
 }
 
 #bloc4 {
@@ -117,25 +125,38 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 10px 10px darkgrey;
-          box-shadow: 10px 10px darkgrey;
+  -webkit-box-shadow: 0px 0px 10px -3px black;
+          box-shadow: 0px 0px 10px -3px black;
+  background: white;
 }
 
 #titre {
-  color: yellow;
+  color: orange;
   width: 100vw;
   height: 10vh;
-  background-color: blue;
+  background-color: #579C87;
   text-align: center;
 }
 
 footer {
-  background-color: darkgreen;
+  position: fixed;
+  background-color: #579C87;
   width: 100vw;
+  color: orange;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #prochainement {
-  background-color: darkolivegreen;
+  background-color: #579C87;
   height: 15vh;
   width: 100vw;
   display: -webkit-box;
@@ -145,5 +166,6 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  color: orange;
 }
 /*# sourceMappingURL=style.css.map */
