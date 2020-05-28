@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 $colorbloc1: #FCDFDB;
 $colorbloc2: #fff5fe;
 $colorbloc3: #ebebeb;;
@@ -10,7 +10,8 @@ $stylebloc1:font-family: "Satisfy", cursive;
 $stylebloc2:
 $stylebloc3:
 $stylebloc4:
-html {
+html { 
+    
     
 }
 *{
@@ -18,7 +19,7 @@ html {
     padding: 0;
 
 }
-body { 
+body {
     display: flex;
     flex-direction: column;
     
@@ -47,12 +48,17 @@ body {
 }
 
 #bloc1 {
-    font-family: "Satisfy"
+    background: $colorbloc1;
+    
     background-color: violet;
     @include bloc;
     border-right: 90px;
-    background: $colorbloc1;
+   
     
+}
+
+#bloc1text {
+     
 }
 
 #bloc2{
@@ -60,6 +66,7 @@ body {
     @include bloc;
     background: $colorbloc2;
     font-family: $stylebloc2;
+    font-family: fantasy;
 
 }
 
