@@ -14,6 +14,55 @@ body {
           flex-direction: column;
 }
 
+.menu {
+  -webkit-box-shadow: 0px 0px 10px -3px black;
+          box-shadow: 0px 0px 10px -3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+  margin-top: 5%;
+  background: #FCDFDB;
+  font-family: "satisfy";
+}
+
+.menu td {
+  padding-left: 40px;
+}
+
+.menu th {
+  padding-right: 40px;
+}
+
+.menu table {
+  width: 100%;
+}
+
+.menu * {
+  padding: 1%;
+}
+
+.menu .para {
+  line-height: 5px;
+  margin: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
 #haut {
   margin-top: 3%;
   display: -webkit-box;
