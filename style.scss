@@ -71,9 +71,14 @@ body {
         margin: 10px;
         text-align: center;
         display: flex;
-        flex-direction: column;
-        border-bottom: 1px solid #000;
-        line-height: 0.1em;
+        flex-direction: row;
+        span{
+
+            width: 100%;
+            background-image: url();
+            display: flex;
+        }
+        
     }
     
     

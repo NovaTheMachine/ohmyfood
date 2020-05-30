@@ -55,12 +55,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-bottom: 1px solid #000;
-  line-height: 0.1em;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .para span {
+  width: 100%;
+  background-image: url();
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #haut {
