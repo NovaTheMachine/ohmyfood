@@ -21,7 +21,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 80vw;
-  height: 80vh;
+  height: 110vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -48,25 +48,49 @@ body {
   padding: 1%;
 }
 
-.menu .para {
-  line-height: 5px;
-  margin: 10px;
-  text-align: center;
+.menu .display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35px;
 }
 
-.menu .para span {
+.menu .para {
   width: 100%;
-  background-image: url();
+  font-size: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu .para:hover {
+  width: 100%;
+  border-bottom: red;
+}
+
+.menu .underline1 {
+  width: 100%;
+  border-bottom: 2px solid #3d1319;
+  margin-left: 7%;
+}
+
+.menu .underline2 {
+  width: 100%;
+  border-bottom: 2px solid #3d1319;
+  margin-right: 7%;
+}
+
+.menu .retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
 }
 
 #haut {

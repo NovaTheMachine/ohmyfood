@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    
     display: flex;
     flex-direction: column;
 }
@@ -49,7 +50,7 @@ body {
     box-shadow:0px 0px 10px -3px black;
     display:flex;
     width: 80vw;
-    height: 80vh;
+    height: 110vh;
     flex-direction: column;
     
     margin-left: 10%;
@@ -66,20 +67,53 @@ body {
     *{ padding: 1%;
         
     }
-    .para{
-        line-height: 5px;
-        margin: 10px;
-        text-align: center;
+    .display{
         display: flex;
-        flex-direction: row;
-        span{
-
-            width: 100%;
-            background-image: url();
-            display: flex;
-        }
+        justify-content: center;
+        height: 35px;
+    }
+    .para{width: 100%;
+        font-size: 2em;
+        justify-content: center;
+        display: flex;
+        
+        
+        
         
     }
+    .para:hover{
+        width: 100%;
+        border-bottom: red;
+
+    }
+
+
+    .underline1{ 
+    
+            width: 100%;
+            border-bottom:2px solid #3d1319;
+            margin-left: 7% ;
+            
+            
+
+            
+            
+        }
+        .underline2{ 
+            
+            
+            width: 100%;
+            border-bottom:2px solid #3d1319;
+            margin-right: 7%;
+        
+           
+        }
+        .retour{
+            display: flex;
+            height: 20vh;
+           
+        }
+        
     
     
     
