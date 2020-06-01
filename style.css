@@ -67,11 +67,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.menu .para:hover {
+.menu .anim {
+  position: relative;
+}
+
+.menu .para::after {
+  content: '';
+  height: 3px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #3d1319;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menu .para:hover::after {
   width: 100%;
-  border-bottom: red;
 }
 
 .menu .underline1 {
