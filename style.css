@@ -52,13 +52,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 35px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.menu .para {
+.menu div.para {
   width: 100%;
   font-size: 2em;
   -webkit-box-pack: center;
@@ -67,42 +68,52 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu .anim {
   position: relative;
 }
 
-.menu .para::after {
+.menu div.para::before {
   content: '';
   height: 3px;
   position: relative;
-  bottom: 0;
-  left: 0;
+  bottom: -20px;
+  left: -3%;
   width: 0%;
   background: #3d1319;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.menu .para:hover::after {
-  width: 100%;
+.menu div.para:hover::before {
+  width: 107%;
 }
 
 .menu .underline1 {
   width: 100%;
   border-bottom: 2px solid #3d1319;
-  margin-left: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
 }
 
 .menu .underline2 {
   width: 100%;
   border-bottom: 2px solid #3d1319;
-  margin-right: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2%;
 }
 
 .menu .retour {
@@ -110,6 +121,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 20vh;
+}
+
+.menu .xxx {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #haut {
@@ -155,7 +177,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 55vh;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -182,7 +204,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 55vh;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -228,7 +250,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 55vh;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -255,7 +277,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 55vh;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
