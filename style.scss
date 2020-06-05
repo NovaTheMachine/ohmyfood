@@ -19,7 +19,7 @@ html {
     
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -54,26 +54,27 @@ body {
     flex-direction: column;
     margin-left: 10%;
     margin-top: 5%;
+    
     td {
         padding-left: 40px;
     }
-    th{
+    th {
         padding-right: 40px;
     }
-    table{
+    table {
         width: 100%;
     }
     *{ padding: 1%;
-        
     }
-    .display{
+    
+    .display {
         display: flex;
         height: 35px;
         flex-direction: row;
-    
-        
     }
-    div.para{width: 100%;
+    
+    div.para {
+        width: 100%;
         font-size: 2em;
         justify-content: center;
         display: flex;
@@ -81,16 +82,14 @@ body {
         position: relative;
         height: 100%;
         flex-direction: column;
-        
-        
-        
-        
     }
-    .anim{
+    
+    .anim {
         position: relative;
         
     }
-    div.para::before{
+    
+    div.para::before {
 
         content: '';
         height: 3px;
@@ -102,50 +101,52 @@ body {
         background:$styletexte1;
         transition: 1s;
         flex-wrap: wrap;
-    
     }
 
-    div.para:hover::before{
+    div.para:hover::before {
         width: 107%;
-       
-        
-      }
-
-
-    .underline1{ 
+    }
     
-            width: 100%;
-            border-bottom:2px solid #3d1319;
-            margin-left: auto ;
-            margin-right: auto;
-            margin-bottom: 2%;
+    .underline1 {  
+    
+        width: 100%;
+        border-bottom:2px solid #3d1319;
+        margin-left: auto ;
+        margin-right: auto;
+        margin-bottom: 2%;
             
 
             
             
         }
-        .underline2{ 
+    .underline2{ 
             
             
-            width: 100%;
-            border-bottom:2px solid #3d1319;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 2%;
+        width: 100%;
+        border-bottom:2px solid #3d1319;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2%;
         
            
         }
-        .retour{
-            display: flex;
-            height: 20vh;
-           
+    .retour{
+        display: flex;
+        height: 20vh;
         }
-         .xxx{
-             width: 100%;
-             position: absolute;
-             display: flex;
-             justify-content: center;
-         }
+    
+    .xxx{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+
+    }
     
     
     
