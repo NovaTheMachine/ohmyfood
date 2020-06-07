@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Kaushan+Script&family=Satisfy&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+html {
+  max-width: auto;
 }
 
 body {
+  max-height: auto;
+  min-height: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +13,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -21,7 +27,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 80vw;
-  height: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -30,6 +35,7 @@ body {
   margin-top: 5%;
   background: #FCDFDB;
   font-family: "satisfy";
+  height: auto;
 }
 
 .menu td {
@@ -130,6 +136,7 @@ body {
 .menu h1 {
   text-align: center;
   font-size: 3em;
+  color: #3d1319;
 }
 
 .menu .position-btn-retour {
@@ -144,7 +151,7 @@ body {
   color: #3d1319;
   background-color: #579C87;
   width: 130px;
-  margin-left: 45%;
+  margin: auto;
   border-radius: 15px;
   font-size: 2em;
 }
@@ -163,6 +170,11 @@ body {
           justify-content: space-evenly;
 }
 
+#haut :hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 #bas {
   margin-top: 3%;
   display: -webkit-box;
@@ -175,6 +187,11 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+#bas :hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 #bloc1 {
@@ -192,7 +209,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 50px;
+  height: 600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -219,7 +236,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 50px;
+  height: 600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -265,7 +282,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 50px;
+  height: 600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -292,7 +309,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  height: 50px;
+  height: 600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -333,18 +350,189 @@ footer {
           align-items: center;
 }
 
+footer :hover {
+  -webkit-animation-name: moove;
+          animation-name: moove;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes moove {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes moove {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
 #prochainement {
   background-color: #579C87;
   height: 15vh;
   width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: orange;
+  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  color: orange;
+  color: #3d1319;
+  font-size: 30px;
+  width: auto;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.dot1 {
+  padding-bottom: 12%;
+  font-size: 2em;
+  -webkit-animation-name: wait;
+          animation-name: wait;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.dot2 {
+  padding-bottom: 12%;
+  font-size: 2em;
+  -webkit-animation-name: wait;
+          animation-name: wait;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.dot3 {
+  padding-bottom: 12%;
+  font-size: 2em;
+  -webkit-animation-name: wait;
+          animation-name: wait;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes wait {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 20%;
+  }
+  20% {
+    opacity: 40%;
+  }
+  30% {
+    opacity: 60%;
+  }
+  40% {
+    opacity: 80%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 80%;
+  }
+  70% {
+    opacity: 60%;
+  }
+  80% {
+    opacity: 40%;
+  }
+  90% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 20%;
+  }
+  20% {
+    opacity: 40%;
+  }
+  30% {
+    opacity: 60%;
+  }
+  40% {
+    opacity: 80%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 80%;
+  }
+  70% {
+    opacity: 60%;
+  }
+  80% {
+    opacity: 40%;
+  }
+  90% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 
 .noteMusiqueBasPage {
@@ -367,6 +555,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  color: #3d1319;
 }
 
 .noteMusiqueBasPage span {

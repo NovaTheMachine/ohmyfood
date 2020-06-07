@@ -16,20 +16,25 @@ $fontfamily2:"DM Serif Display", serif;
 $fontfamily3:"Bad Script", cursive;
 $fontfamily4:"Kaushan Script", cursive;
 
-html { 
-    
+html {
+        max-width: auto;
 }
+body {
+    
+    max-height: auto;
+    min-height: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    
-    display: flex;
-    flex-direction: column;
-}
+
 
 @mixin bloc {
     font-size: 2em;
@@ -38,23 +43,21 @@ body {
     flex-direction: column;
     display: flex; 
     width: 35vw;
-    height: 50px;
+    height: 600px;
     justify-content: center;
     box-shadow:0px 0px 10px -3px black;
     
-    :hover{
-        
-    }
+    
 }
 
 @mixin pages {
     box-shadow:0px 0px 10px -3px black;
     display:flex;
     width: 80vw;
-    height: 80%;
     flex-direction: column;
     margin-left: 10%;
     margin-top: 5%;
+   
     
     td {
         padding-left: 40px;
@@ -83,6 +86,7 @@ body {
         position: relative;
         height: 100%;
         flex-direction: column;
+      
     }
     
     .anim {
@@ -145,6 +149,7 @@ body {
     h1 {
         text-align: center;
         font-size: 3em;
+        color: $styletexte1;
 
     }
     
@@ -156,7 +161,7 @@ body {
         color: $styletexte1;
         background-color: $colorheadfoot;
         width: 130px;
-        margin-left: 45%;
+        margin: auto;
         border-radius: 15px;
         font-size: 2em;
       }
@@ -168,6 +173,7 @@ body {
     @include pages ;
     background: #FCDFDB;
     font-family: "satisfy";
+    height: auto;
 
 }
 
@@ -179,12 +185,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    :hover{
+        transform: scale(1.1,1.1);
+
+        
+    }
 }
 
 #bas{ margin-top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    :hover{
+        transform: scale(1.1,1.1);
+
+        
+    }
 }
 
 #bloc1 {
@@ -198,9 +214,10 @@ body {
         font-size: 2em ;
     }
     
+    
 }
 
-#bloc1text {
+#bloc1text { 
      
 }
 
@@ -283,18 +300,74 @@ footer {
     justify-content: space-around;
     height: 10%;
     align-items: center;
+
+    :hover{
+        animation-name: moove;
+        animation-duration: 1s;
+
+    }
+    @keyframes moove {
+        0% { transform: rotate(5deg);}
+        25% { transform: rotate(-5deg);}
+        50% { transform: rotate(5deg);}
+        75% { transform: rotate(-5deg);}
+        100% { transform: rotate(5deg);}
+        
+    }
 }
 
 #prochainement{
     background-color:$colorheadfoot;
     height: 15vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
+    align-items: center;
     text-align: center;
     color: $colortext;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    color: $styletexte1;
+    font-size: 30px;
+    width: auto;
+    margin: auto;
+    border-radius: 15px;
 }
-.noteMusiqueBasPage {
+
+@mixin dot { padding-bottom: 12% ;
+    font-size: 2em;
+    animation-name: wait;
+    animation-duration: 3s ;
+   animation-iteration-count: infinite;
+   
+    
+}
+
+.dot1{@include dot
+}
+.dot2{@include dot
+    animation-delay: 1s;
+    
+}
+.dot3{@include dot
+    animation-delay: 2s;
+}
+
+@keyframes wait{
+    0% { opacity: 0%;}
+    10% { opacity: 20%;}
+    20% { opacity: 40%;}
+    30% { opacity: 60%;}
+    40% { opacity: 80%;}
+    50% { opacity: 100%;}
+    60% { opacity: 80%;}
+    70% { opacity: 60%;}
+    80% { opacity: 40%;}
+    90% { opacity: 20%;}
+    100% { opacity: 0%;}
+
+}
+
+    .noteMusiqueBasPage {
     margin-top: 1em;
     width: 100%;
     display: flex;
@@ -305,6 +378,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: $styletexte1;
 }
 
   .noteMusiqueBasPage span {
