@@ -7,6 +7,7 @@ $colorheadfoot: #579C87;
 $colortext:orange;
 $styletexte1: #3d1319;
 $styletexte2: #c77412;
+$colorgradient: linear-gradient(#e66465, #9198e5);
 
 
 
@@ -170,12 +171,9 @@ body {
 
 }
 
-.fa-music {display: flex;
-    width: 100%;
-    justify-content: center;
-    color: $styletexte1;
-    font-size: 5em;
-}
+
+
+
 
 #haut{margin-top: 3%;
     display: flex;
@@ -297,16 +295,35 @@ footer {
     color: $colortext;
 }
 .noteMusiqueBasPage {
-    margin-top: 2rem;
+    margin-top: 1em;
     width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2em;
+    width: 100%;
     justify-content: center;
     align-items: center;
-  }
+    text-align: center;
+}
 
-  .noteMusiqueBasPage p {
-    color: black;
-    font-family: "Satisfy", cursive;
-    font-size: 2rem;
-    margin-left: 2rem;
-  }  
+  .noteMusiqueBasPage span {
+      width: auto;
+      color: $styletexte2;
+}  
+
+
+.fa-music {display: flex; 
+    width: 100%; 
+    justify-content: center; 
+    background: $colorgradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em; 
+    align-items: center;
+}
+
+span.fa-music {color: $colorgradient;;
+    font-size: 1em;
+    
+}
